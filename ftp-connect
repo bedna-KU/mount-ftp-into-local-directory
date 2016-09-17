@@ -1,0 +1,6 @@
+mkdir /mnt/ftp
+curlftpfs ftp-user:ftp-pass@server.com.local /mnt/ftp/
+
+# if fuse: failed to open /dev/fuse: Permission denied
+# curlftpfs -o allow_other ftp-user:ftp-pass@my-ftp-location.local /mnt/my_ftp/
+
